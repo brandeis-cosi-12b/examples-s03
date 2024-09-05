@@ -1,0 +1,23 @@
+{
+    "java.project.sourcePaths": [
+        "src/main",
+        "src/test"
+    ],
+    "java.project.outputPath": "bin",
+    "java.test.config" : {
+        "sourcePaths": ["src/test"]
+    },
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "github.copilot.editor.enableAutoCompletions": false,
+    "files.exclude": {
+        ".github": true,
+        ".gitignore": true,
+        ".vscode": true,
+        ".devcontainer": true,
+        "LICENSE": true,
+        ".images": true
+    },
+    "java.server.launchMode": "Standard"
+}

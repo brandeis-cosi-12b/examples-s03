@@ -1,0 +1,1 @@
+When assignments include automated tests, they will live under this directory.
