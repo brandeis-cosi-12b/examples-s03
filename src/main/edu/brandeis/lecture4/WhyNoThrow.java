@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * A class demonstrating that not all exceptions need to be declared or caught.
  */
-public class WhyNoThrows {
+public class WhyNoThrow {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("What's your age again?");
