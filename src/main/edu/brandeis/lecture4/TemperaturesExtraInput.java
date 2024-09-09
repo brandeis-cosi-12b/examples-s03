@@ -9,9 +9,9 @@ import java.util.*;  // for Scanner
  * This version handles an input file that contains strings interspersed with temperatures
  * (by ignoring the strings).
  */
-public class TemperaturesDirtyInput {
+public class TemperaturesExtraInput {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/lecture4/weather_dirty.txt"));
+        Scanner input = new Scanner(new File("resources/lecture4/weather_extra_input.txt"));
         double prev = input.nextDouble();   
 
         while (input.hasNext()) {
