@@ -1,5 +1,8 @@
 package edu.brandeis.lecture3;
 
+/**
+ * This class demonstrates the usage of several different basic String methods
+ */
 public class StringExample {
    public static void main(String[] args) {
       String s1 = "hello";

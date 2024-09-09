@@ -2,6 +2,9 @@ package edu.brandeis.lecture3;
 
 import java.util.Scanner;
 
+/**
+ * This class demonstrates what happens when Strings are compared with ==
+ */
 public class StringEqualsEqualsComparisons {
    public static void main(String[] args) {
       Scanner console = new Scanner(System.in);

@@ -1,6 +1,10 @@
 package edu.brandeis.lecture3;
 
 import java.util.*;
+
+/**
+ * This class demonstrates the usage of Scanner.nextInt() to get an integer input from a user.
+ */
 public class RetirementCountdown {	
   public static void main(String[] args) {
     Scanner console = new Scanner(System.in);

@@ -1,6 +1,10 @@
 package edu.brandeis.lecture3;
 
 import java.util.*;
+
+/**
+ * This class demonstrates the usage of Scanner.next() to get a single word of input at a time from a user.
+ */
 public class FullName {	
   public static void main(String[] args) {
     Scanner console = new Scanner(System.in);
