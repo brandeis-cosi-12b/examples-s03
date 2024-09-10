@@ -1,4 +1,4 @@
-package edu.brandeis.lecture5;
+package edu.brandeis.lecture6;
 
 import java.util.Arrays;
 
