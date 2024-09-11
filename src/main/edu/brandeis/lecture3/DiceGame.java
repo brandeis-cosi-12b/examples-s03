@@ -8,7 +8,6 @@ public class DiceGame {
         int tries = 0;       
         int sum = 0;
         while (sum != 7) {
-            // roll the dice once
             int roll1 = rand.nextInt(6) + 1;
             int roll2 = rand.nextInt(6) + 1;
             sum = roll1 + roll2;
