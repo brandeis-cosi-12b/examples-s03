@@ -6,6 +6,223 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WhyNoThrow",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.WhyNoThrow",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "Triangle",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.Triangle",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "GrowArray",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.GrowArray",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ArrayShifting",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.ArrayShifting",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ArrayShiftingLeftToRight",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.ArrayShiftingLeftToRight",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "MostFrequentDigit",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.MostFrequentDigit",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.BubbleSort",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ReverseArray",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.ReverseArray",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture6.LinearSearch",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ArrayDoubleInPlace",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture5.ArrayDoubleInPlace",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ArrayCopyAndDouble",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture5.ArrayCopyAndDouble",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "PrintingArrays",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture5.PrintingArrays",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "PostalAddressComponentsClean",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.PostalAddressComponentsClean",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "PostalAddressComponents",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.PostalAddressComponents",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "PostalAddress",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.PostalAddress",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "FullName",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.FullName",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "RetirementCountdown",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.RetirementCountdown",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "HoursWorkedFileOutput",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.HoursWorkedFileOutput",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "HoursWorked",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.HoursWorked",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "HoursWorkedToken",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.HoursWorkedToken",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "TemperaturesExtraInput",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.TemperaturesExtraInput",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "TemperaturesDirtyInput",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.TemperaturesDirtyInput",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "Temperatures",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.Temperatures",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ReadFile",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.ReadFile",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "WhyNoThrows",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.WhyNoThrows",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "ReadFileNoCompile",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture4.ReadFileNoCompile",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "DiceGame",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.DiceGame",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "StringEqualsEqualsComparisons",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.StringEqualsEqualsComparisons",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "StringDotEqualsComparisons",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.StringDotEqualsComparisons",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "StringComparisons",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.StringComparisons",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
+            "name": "StringExample",
+            "request": "launch",
+            "mainClass": "edu.brandeis.lecture3.StringExample",
+            "projectName": "examples-s03_6122bd14"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

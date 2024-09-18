@@ -19,5 +19,6 @@
         "LICENSE": true,
         ".images": true
     },
-    "java.server.launchMode": "Standard"
+    "java.server.launchMode": "Standard",
+    "java.debug.settings.onBuildFailureProceed": true
 }

@@ -3,9 +3,9 @@ package edu.brandeis.lecture6;
 public class MostFrequentDigit {
     public static int[] countDigits(int num) {
         int[] counts = new int[10];
-        int digit = 0;
+    
         while (num > 0) {
-            digit = num % 10;  // pluck off a digit and tally it
+            int digit = num % 10;  // pluck off a digit and tally it
             counts[digit]++;
             num = num / 10;
         }  
