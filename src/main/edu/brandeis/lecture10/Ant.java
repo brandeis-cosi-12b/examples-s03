@@ -1,9 +1,9 @@
-package edu.brandeis.lecture9;
+package edu.brandeis.lecture10;
 
 public class Ant {
     public static final int NUM_FLOORS = 5;
     int height;
-    int turnaroundCount;
+    int floorCount;
     boolean goingUp;
     
     public Ant() {
@@ -19,7 +19,7 @@ public class Ant {
     } 
 
     public int getTurnaroundCount() {
-        return turnaroundCount;
+        return floorCount;
     }
 
     public int getHeight() {
@@ -34,12 +34,12 @@ public class Ant {
         }
         if (height == NUM_FLOORS) {
             goingUp = false;
-            turnaroundCount += 1;
+            floorCount += 1;
             height -= 1;
         }
         if (height == 0) {
             goingUp = true;
-            turnaroundCount += 1;
+            floorCount += 1;
         }
     }
 
