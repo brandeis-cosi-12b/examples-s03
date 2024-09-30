@@ -27,6 +27,8 @@ public class AntTest {
 
     @Test public void testCircuit() {
         Ant a = new Ant();
+        assertEquals(0, a.getHeight());
+        assertEquals(0, a.getTurnaroundCount());
 
         a.crawl();
         assertEquals(1, a.getHeight());
@@ -43,10 +45,6 @@ public class AntTest {
         a.crawl();
         assertEquals(4, a.getHeight());
         assertEquals(0, a.getTurnaroundCount());
-
-        a.crawl();
-        assertEquals(4, a.getHeight());
-        assertEquals(1, a.getTurnaroundCount());
 
         a.crawl();
         assertEquals(3, a.getHeight());
@@ -62,16 +60,20 @@ public class AntTest {
 
         a.crawl();
         assertEquals(0, a.getHeight());
-        assertEquals(2, a.getTurnaroundCount());
+        assertEquals(1, a.getTurnaroundCount());
 
         a.crawl();
         assertEquals(1, a.getHeight());
+        assertEquals(2, a.getTurnaroundCount());
+
+        a.crawl();
+        assertEquals(2, a.getHeight());
         assertEquals(2, a.getTurnaroundCount());
     }
 
     @Test public void testManyCircuits() {
         Ant a = new Ant();
-        for(int i = 0; i < 45; i++) {
+        for(int i = 0; i < 41; i++) {
             a.crawl();
         }
         assertEquals(10, a.getTurnaroundCount());
@@ -95,6 +97,6 @@ public class AntTest {
         for(int i = 0; i < 7; i++) {
             a.crawl();
         }
-        assertEquals("Ant at floor 2 (going down)", a.toString());
+        assertEquals("Ant at floor 1 (going down)", a.toString());
     }
 }

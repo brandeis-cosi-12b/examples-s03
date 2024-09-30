@@ -3,7 +3,7 @@ package edu.brandeis.lecture10;
 public class Ant {
     public static final int NUM_FLOORS = 5;
     int height;
-    int floorCount;
+    int turnaroundCount;
     boolean goingUp;
     
     public Ant() {
@@ -19,27 +19,30 @@ public class Ant {
     } 
 
     public int getTurnaroundCount() {
-        return floorCount;
+        return turnaroundCount;
     }
 
     public int getHeight() {
         return height;
     }
     
+    private void turnAroundIfNeeded() {
+        if(goingUp && height == NUM_FLOORS - 1) {
+            goingUp = false;
+            turnaroundCount++;
+        } else if(!goingUp && height == 0) {
+            goingUp = true;
+            turnaroundCount++;
+        }
+    }
+
     public void crawl() {
+        turnAroundIfNeeded();
+
         if (goingUp) {
             height += 1;
         } else {
             height -= 1;
-        }
-        if (height == NUM_FLOORS) {
-            goingUp = false;
-            floorCount += 1;
-            height -= 1;
-        }
-        if (height == 0) {
-            goingUp = true;
-            floorCount += 1;
         }
     }
 
