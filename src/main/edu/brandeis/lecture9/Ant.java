@@ -1,7 +1,7 @@
 package edu.brandeis.lecture9;
 
 public class Ant {
-    public static final int NUM_FLOORS = 5;
+    static int NUM_FLOORS = 5;
     int height;
     int turnaroundCount;
     boolean goingUp;
@@ -11,7 +11,7 @@ public class Ant {
     }
 
     public Ant(int height) {
-        if (height < 0 || height > NUM_FLOORS) {
+        if (height < 0 || height >= NUM_FLOORS) {
             System.out.println("Bad Height");
         }
         this.height = height;

@@ -1,11 +1,13 @@
 package edu.brandeis.lecture10;
 
+import java.util.Arrays;
+
 public class Ant {
     public static final int NUM_FLOORS = 5;
     int height;
     int turnaroundCount;
     boolean goingUp;
-    
+
     public Ant() {
         this(0);
     }
@@ -54,6 +56,14 @@ public class Ant {
             rval += " (going down)";
         }
         return rval;
+    }
+
+    public boolean equals(Object o) {
+        if(!(o instanceof Ant)) {
+            return false;
+        }
+        Ant other = (Ant)o;
+        return height == other.height && goingUp == other.goingUp && turnaroundCount == other.turnaroundCount;
     }
 }
    

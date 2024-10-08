@@ -25,7 +25,7 @@ public class Barbell {
     }
 
     public boolean addWeight(int weight) {
-        // Failure case: already at amax weight count 
+        // Failure case: already at max weight count 
         if (lastWeightIndex == weights.length - 1) {
             return false;
         }

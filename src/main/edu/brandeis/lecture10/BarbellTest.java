@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BarbellTest {
-    
+
     @Test
     public void testAddValid() {
         Barbell b = new Barbell();
@@ -49,7 +49,7 @@ public class BarbellTest {
 
         assertEquals(0, b.removeWeight());
         assertEquals(0, b.getTotalWeight());
-    }    
+    }
 
     @Test
     public void testToString() {
