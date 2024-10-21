@@ -1,4 +1,4 @@
-package edu.brandeis.lecture12;
+package edu.brandeis.lecture12.ver11;
 
 public class PointMain {
     public static void main(String[] args) {

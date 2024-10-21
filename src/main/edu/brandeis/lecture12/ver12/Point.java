@@ -1,12 +1,11 @@
-package edu.brandeis.lecture12;
+package edu.brandeis.lecture12.ver12;
 
 public class Point{
     private int x;
     private int y;
 
     public Point(int initialX, int initialY){
-        x = initialX;
-        y = initialY;
+        setLocation(x, y);
     }
 
     public Point() {
@@ -26,14 +25,16 @@ public class Point{
     }
 
     public void setLocation(int x, int y) {
+        if(x < 0 || y < 0) {
+            throw new IllegalArgumentException("x and y must be positive");
+        }
         this.x = x;
         this.y = y;
     }
 
     // shifts this point's location by the given amount
     public void translate(int dx, int dy){
-        x += dx;
-        y += dy;
+        setLocation(x + dx, y + dy);
     }
 
     // computes the distance between two points
@@ -62,4 +63,9 @@ public class Point{
         }
     }
 
+    public static Point makePoint(int x, int y) {
+        return new Point(x, y);
+    }
+
+    // Point p = Point.makePoint(1, 2);
 }
