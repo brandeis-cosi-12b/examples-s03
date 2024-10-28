@@ -10,7 +10,6 @@ public class EmployeeMain {
         System.out.printf("$%.2f, ", employee1.getSalary());
         System.out.print(employee1.getVacationDays() + ", ");
         System.out.println(employee1.getVacationForm());
-         
 
         System.out.print("Secretary: ");
         Secretary employee2 = new Secretary();

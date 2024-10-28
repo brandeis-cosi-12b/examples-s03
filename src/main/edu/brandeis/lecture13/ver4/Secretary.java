@@ -11,6 +11,10 @@ public class Secretary extends Employee {
         return 0;
     }
     
+    public void printYears() {
+        System.out.println(years);        
+    }
+    
     public void takeDictation(String text) {
         System.out.println("Taking dictation of text: " + text);
     }
