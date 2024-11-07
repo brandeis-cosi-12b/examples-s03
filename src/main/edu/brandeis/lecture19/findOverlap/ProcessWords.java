@@ -1,4 +1,4 @@
-package edu.brandeis.lecture20.findOverlap;
+package edu.brandeis.lecture19.findOverlap;
 
 import java.io.File;
 import java.io.FileNotFoundException;
