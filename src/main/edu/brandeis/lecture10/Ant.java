@@ -1,7 +1,5 @@
 package edu.brandeis.lecture10;
 
-import java.util.Arrays;
-
 public class Ant {
     public static final int NUM_FLOORS = 5;
     int height;
