@@ -4,69 +4,62 @@ import java.util.Scanner;
 
 public class ConnectFour {
 
-
-
-
-
-
-
-
-
-
-    
-
-    /*
-    public static void takeTurn(String[][] board, String player, Scanner console) {
-        System.out.println(player + "'s turn. Which col (0-6)?");
-        int col = console.nextInt();
-
-        int i = board.length - 1;
-        while(i >= 0) {
-            if(board[i][col].equals(" ")) {
-                board[i][col] = player;
-                break;
+    public static String[][] makeBoard() {
+        String[][] board = new String[6][7];
+        for(int row = 0; row < board.length; row++) {
+            for(int col = 0; col < board[row].length; col++) {
+                board[row][col] = "O";
             }
-            i--;
         }
+        return board;
     }
 
     public static void printBoard(String[][] board) {
-        for(int i = 0; i < board.length; i++) {
-            for(int j = 0; j < board[i].length; j++) {
-                System.out.print(board[i][j] + " ");
+        for(int row = 0; row < board.length; row++) {
+            for(int col = 0; col < board[row].length; col++) {
+                System.out.print(board[row][col] + " ");
             }
             System.out.println();
         }
     }
 
-    public static boolean checkWinner(String[][] board) {
+    public static int getChoice(Scanner c) { 
+        System.out.println("Which column?");
+        return c.nextInt();
+    }
+
+    public static void placePiece(String[][] board, int column, String player) {
+        for(int row = board.length - 1; row >= 0; row--) {
+            if(board[row][column].equals("O")) {
+                board[row][column] = player;
+                return;
+            }
+        }
+    }
+
+    public static boolean gameFinished(String[][] board) {
         return false;
     }
 
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        String[][] board = new String[6][7];
 
-        for(int i = 0; i < board.length; i++) {
-            for(int j = 0; j < board[i].length; j++) {
-                board[i][j] = " ";
-            }
-        }
-        boolean end = false;
-        String red = "R";
-        String black = "B";
-        String currPlayer = red;
-        while(!end) {
-            takeTurn(board, currPlayer, console);
+        String[][] board = makeBoard();
+
+        String player = "R";
+
+        while(!gameFinished(board)) {
             printBoard(board);
-            end = checkWinner(board);
+            int decision = getChoice(console);
 
-            if(currPlayer == red) {
-                currPlayer = black;
+            placePiece(board, decision, player);
+
+            if(player.equals("R")) {
+                player = "B";
             } else {
-                currPlayer = red;
+                player = "R";
             }
         }
+
     }
-        */
 }
