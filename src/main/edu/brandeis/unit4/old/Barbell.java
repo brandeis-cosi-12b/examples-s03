@@ -1,4 +1,4 @@
-package edu.brandeis.lecture10;
+package edu.brandeis.unit4.old;
 
 /*
  * A barbell holds weight
