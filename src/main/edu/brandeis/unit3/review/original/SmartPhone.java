@@ -5,19 +5,15 @@ public class SmartPhone {
     public String owner;
     public int storage_used;
 
-    public SmartPhone(String owner) {
+    public void SmartPhone(String owner) {
         owner = owner;
     }
 
-    public boolean install(App app) {
+    public static boolean install(App app) {
         if(storage_used > MAX_STORAGE) {
             return false;
         }
         storage_used += app.size;
         return true;
-    }
-
-    public static String toString() {
-        return owner + "'s Phone (storage used: " + storage_used + ")";
     }
 }
